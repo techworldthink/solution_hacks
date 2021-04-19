@@ -77,6 +77,9 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+td{
+  border-top: 1px solid white;
+}
 
 .red{
   color: red;
@@ -108,4 +111,16 @@ font-size:80%;
 }
 .footer-bg{
   background-color: white;
+}
+
+.contrib{
+  color: chartreuse;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.contrib:hover{
+  text-decoration: none;
+  color: crimson;
 }
