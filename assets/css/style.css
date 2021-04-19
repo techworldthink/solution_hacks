@@ -78,3 +78,16 @@ body {
 td{
     border-top: 1px solid white;
 }
+
+.red{
+  color: red;
+}
+.yellow{
+  color: yellow;
+}
+.white{
+  color: white;
+}
+.none-b{
+  font-weight: normal;
+}

@@ -39,10 +39,23 @@
             </tr>
 
             <tr>
-              <td>sample</td>
+              <td><b class="yellow none">Q: Laptop Touchpad not working in Ubuntu / Linux </b><br><br>
+                1) sudo -i <br>
+                &ensp;&ensp;(Enter your password then hit enter)<br>
+                2) less /proc/bus/input/devices<br>
+                &ensp;&ensp;(check your touchpad vendor present or not, if present continue.....)<br>
+                3) sudo rmmod i2c_hid<br>
+                4) sudo modprobe i2c_hid<br>
+                5) sudo apt-get update<br>
+                6) sudo apt-get upgrade<br>
+              </td>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
+              <td>
+
+              
+
+              </td>
             </tr>
 
 
