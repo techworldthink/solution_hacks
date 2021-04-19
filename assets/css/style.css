@@ -1,5 +1,6 @@
 .search-div{
     animation: color-change1 3s infinite;
+    margin-top: 1em;
  
 }
 @keyframes color-change1 {
@@ -8,22 +9,16 @@
     100% { color: black;background-color: white; }
   }
 
-
-  input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-  
-  /* When the input field gets focus, change its width to 100% */
-  input[type=text]:focus {
+#myInput{
     width: 100%;
-  }
+    margin-top: .5em;
+}
+  
   .table-bar{
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
       margin-top: 1em;
-      width: 90%;
+      width: 100%;
       border: 1px solid;
      
   }
@@ -33,4 +28,9 @@
 
   .search-here{
    margin: 0;
+  }
+  .thead{
+      text-transform: uppercase;
+      text-align: center;
+
   }
