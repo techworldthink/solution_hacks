@@ -39,9 +39,9 @@
   margin-right: 0;
   margin-top: 1em;
   width: 100%;
-  border: 1px solid white;
+ /* border: 1px solid white;
   border-radius: 15px;
-  border-collapse: separate;
+  border-collapse: separate;*/
 }
 
 .search-here {
@@ -56,27 +56,28 @@
 
 body {
   background: black;
-  background: url(../images/nature-4939842.jpg);
+  /*background: url(../images/nature-4939842.jpg);*/
   color: white;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 .main {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
 }
 .inner-img {
   background: black;
   background: url(../images/nature-4939842.jpg);
   background-position: center;
   padding: 0;
+  background-repeat: repeat-y;
 }
 .transparnt {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 td{
-    border-top: 1px solid white;
+    /*border-top: 1px solid white;*/
 }
 
 .red{
@@ -90,4 +91,23 @@ td{
 }
 .none-b{
   font-weight: normal;
+}
+
+
+.footer
+{
+   /*background:linear-gradient(#ffffff,#5f5d5f61); */
+   /*background: linear-gradient(#e0dcdc,#00272273);*/
+   background-color: black;
+}
+.foot_h
+{
+font-size:80%;    
+}
+.foot_p
+{
+    font-size: 60%;
+}
+.footer-bg{
+  background-color: white;
 }
