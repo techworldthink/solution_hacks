@@ -34,3 +34,26 @@
       text-align: center;
 
   }
+
+  body {
+    background: black;
+    background: url(../images/nature-4939842.jpg);
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .main{
+      background-color: rgba(0,0,0,.7);
+      
+  
+  }
+  .inner-img{
+    background: black;
+    background: url(../images/nature-4939842.jpg);
+    background-position: center;
+    padding: 0;
+  }
+  .transparnt{
+    background-color: rgba(0,0,0,.5);
+  }

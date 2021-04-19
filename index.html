@@ -14,35 +14,44 @@
 </head>
 
 <body>
-  <header>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/images/bg.jpg" alt="First slide">
+  <div class="main">
+    <header>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/images/bg.jpg" alt="First slide">
+          </div>
         </div>
+    </header>
+
+    <div class="container">
+
+      <!--.....................................................................................................-->
+      <div class="text-center search-div">
+        <h5 class="search-here">Search here</h5>
       </div>
-  </header>
-  <div class="container">
-    <!--.....................................................................................................-->
-    <div class="text-center search-div">
-      <h5 class="search-here">Search here</h5>
+
+      <input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search.." class="search-bar">
+      <div class=" inner-img">
+        <div class="transparnt">
+          <table id="myTable" class="table-bar" cellpadding="10px">
+            <tr class="header">
+              <th class="thead">Problems and Solutions </th>
+            </tr>
+
+            <tr>
+              <td>Alfreds Futterkiste</td>
+            </tr>
+
+
+          </table>
+          <br><br><br><br><br><br><br>
+        </div>
+        <!--.....................................................................................................-->
+      </div>
     </div>
-
-    <input type="text" name="search" id="myInput" onkeyup="myFunction()" placeholder="Search.." class="search-bar">
-
-    <table id="myTable" class="table-bar" cellpadding="10px">
-      <tr class="header">
-          <th class="thead">Problems and Solutions </th>
-      </tr>
-      
-      <tr>
-          <td>Alfreds Futterkiste</td>
-      </tr>
-  </table>
-
-    <!--.....................................................................................................-->
   </div>
-  <br><br><br>
+
 
 
   <!--bootstrap-->
