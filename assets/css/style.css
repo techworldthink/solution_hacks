@@ -52,6 +52,7 @@
   text-transform: uppercase;
   text-align: center;
   color: aqua;
+  
 }
 
 body {
@@ -76,9 +77,6 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-td{
-    /*border-top: 1px solid white;*/
-}
 
 .red{
   color: red;
