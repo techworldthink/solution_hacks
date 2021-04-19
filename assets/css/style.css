@@ -1,59 +1,75 @@
-.search-div{
-    animation: color-change1 3s infinite;
-    margin-top: 1em;
- 
+.search-div {
+  animation: color-change1 3s infinite;
+  margin-top: 1em;
+  border-radius: 5px;
 }
 @keyframes color-change1 {
-    0% { color: black;background-color: white; }
-    50% { color: white;background-color: black; }
-    100% { color: black;background-color: white; }
+  0% {
+    color: black;
+    background-color: white;
   }
-
-#myInput{
-    width: 100%;
-    margin-top: .5em;
-}
-  
-  .table-bar{
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 1em;
-      width: 100%;
-      border: 1px solid;
-     
-  }
-  tr,td{
-    border: 1px solid;
-  }
-
-  .search-here{
-   margin: 0;
-  }
-  .thead{
-      text-transform: uppercase;
-      text-align: center;
-
-  }
-
-  body {
-    background: black;
-    background: url(../images/nature-4939842.jpg);
+  50% {
     color: white;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    background-color: black;
   }
-  .main{
-      background-color: rgba(0,0,0,.7);
-      
-  
+  100% {
+    color: black;
+    background-color: white;
   }
-  .inner-img{
-    background: black;
-    background: url(../images/nature-4939842.jpg);
-    background-position: center;
-    padding: 0;
-  }
-  .transparnt{
-    background-color: rgba(0,0,0,.5);
-  }
+}
+
+#myInput {
+  width: 100%;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+#myInput:focus {
+  border-radius: 5px;
+  outline: none;
+}
+.table-bar {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+  border-collapse: separate;
+}
+
+.search-here {
+  margin: 0;
+}
+
+.thead {
+  text-transform: uppercase;
+  text-align: center;
+  color: aqua;
+}
+
+body {
+  background: black;
+  background: url(../images/nature-4939842.jpg);
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.inner-img {
+  background: black;
+  background: url(../images/nature-4939842.jpg);
+  background-position: center;
+  padding: 0;
+}
+.transparnt {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+td{
+    border-top: 1px solid white;
+}
