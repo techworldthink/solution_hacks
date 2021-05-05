@@ -78,7 +78,8 @@ body {
 }
 
 td{
-  border-top: 1px solid white;
+  border-top: 3px solid red;
+  margin-top: 2em;
 }
 
 .red{
@@ -126,5 +127,15 @@ font-size:80%;
 }
 
 .orange{
-  color: orange;
+ 
+  color:rgb(245, 188, 0);
+}
+
+.que-bg{
+  background-color: white;
+  display: block;
+  align-items: center;
+  text-align: center;
+  color:black;
+  padding: 5px;
 }
