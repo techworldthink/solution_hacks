@@ -26,9 +26,8 @@
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
-
 
 #myInput:focus {
   border-radius: 5px;
@@ -39,7 +38,7 @@
   margin-right: 0;
   margin-top: 1em;
   width: 100%;
- /* border: 1px solid white;
+  /* border: 1px solid white;
   border-radius: 15px;
   border-collapse: separate;*/
 }
@@ -52,7 +51,6 @@
   text-transform: uppercase;
   text-align: center;
   color: aqua;
-  
 }
 
 body {
@@ -77,65 +75,60 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-td{
+td {
   border-top: 3px solid red;
   margin-top: 2em;
 }
 
-.red{
+.red {
   color: red;
 }
-.yellow{
+.yellow {
   color: yellow;
 }
-.white{
+.white {
   color: white;
 }
-.none-b{
+.none-b {
   font-weight: normal;
 }
 
-
-.footer
-{
-   /*background:linear-gradient(#ffffff,#5f5d5f61); */
-   /*background: linear-gradient(#e0dcdc,#00272273);*/
-   background-color: black;
+.footer {
+  /*background:linear-gradient(#ffffff,#5f5d5f61); */
+  /*background: linear-gradient(#e0dcdc,#00272273);*/
+  background-color: black;
 }
-.foot_h
-{
-font-size:80%;    
+.foot_h {
+  font-size: 80%;
 }
-.foot_p
-{
-    font-size: 60%;
+.foot_p {
+  font-size: 60%;
 }
-.footer-bg{
+.footer-bg {
   background-color: white;
 }
 
-.contrib{
+.contrib {
   color: chartreuse;
   text-align: center;
   display: block;
   text-decoration: none;
 }
 
-.contrib:hover{
+.contrib:hover {
   text-decoration: none;
   color: crimson;
 }
 
-.orange{
- 
-  color:rgb(245, 188, 0);
+.orange {
+  color: rgb(245, 188, 0);
 }
 
-.que-bg{
+.que-bg {
   background-color: white;
   display: block;
   align-items: center;
   text-align: center;
-  color:black;
+  color: black;
   padding: 5px;
 }
