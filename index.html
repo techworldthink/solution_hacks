@@ -199,22 +199,26 @@
             </tr>
 
             <tr>
-              <td><b class="que-bg">Q:How to install Virtual Box Guest Additions on Debian?</b><br><br>
-               
-                <b class="orange none-b">1)Goto to the top bar click on Device->Insert Guest Additions CD Image</b> <br><br>
-                
-                <b class="orange none-b">2) Mount the CD:(open terminal and type below commands)</b><br>
+              <td><b class="que-bg">Q:How to install Virtual Box Guest Additions on Debian?</b><br>
+                <b class="orange none-b">Method -1</b><br>
+                1)Goto to the top bar click on Device->Insert Guest Additions CD Image<br>
+                 2)open terminal and type these commands <br>
+                3) mount /dev/cdrom /media/cdrom<br>
+                4) cd /media/cdrom<br>
 
-                # mount /dev/cdrom /media/cdrom<br><br>
-                <b class="orange none-b">3)cd into the mounted directory:</b><br>
+                5) ./VBoxLinuxAdditions.run<br><br><br>
+                <b class="orange none-b">Method -2</b><br>
+                1)open terminal and type it<br>
+                2) apt install virtualbox-guest-utils<br><br>
 
-                # cd /media/cdrom<br><br>
-                <b class="orange none-b">4)Run the installer:</b><br>
-
-                # ./VBoxLinuxAdditions.run<br><br><br>
-                <b class="orange none-b">Or alternatively, if you really want to install from repository:</b><br>
-
-                # apt install virtualbox-guest-utils<br>
+                <b class="orange none-b">Method -3</b><br>
+                1)sudo apt-get update apt-get install -y linux-headers- $(uname -r) <br>
+                2)got to virtualbox Device->Insert Geust Addition CD <br>
+                3)go to Files in Ubuntu , then 
+                copy VBoxLinuxAdditions.run<br>
+                4)paste in a folder created in Home of ubuntu<br>
+                5)chmod 755 VBoxLinuxAdditions.run<br>
+                6)sudo ./VBoxLinuxAdditions.run
 
                
               </td>
