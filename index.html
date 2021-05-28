@@ -111,7 +111,8 @@
 
                 "ഹോ..അതിനു എന്താ സർ അതു സിമ്പിൾ ആയി ചെയ്യാലോ, വിൻഡോസ്‌ അങ്ങ് ഫോർമാറ്റ് ചെയ്യാ.."😊<br><br>
 
-                "അയ്യോ ഫോർമാറ്റ്‌ ചെയ്‌താൽ എന്റെ കുറെ അപ്ലിക്കേഷൻ data & അപ്ഡേറ്റഡ് ഫയൽസ് എല്ലാം നഷ്‍ടമാകില്ലേ...😥...!?<br><br>
+                "അയ്യോ ഫോർമാറ്റ്‌ ചെയ്‌താൽ എന്റെ കുറെ അപ്ലിക്കേഷൻ data & അപ്ഡേറ്റഡ് ഫയൽസ് എല്ലാം
+                നഷ്‍ടമാകില്ലേ...😥...!?<br><br>
 
                 "അതു ആകും,,,പേർസണൽ data യുടെ കാര്യത്തിൽ ഒരു ഉറപ്പും പറയാൻ കഴിയില്ല...."😆<br><br>
 
@@ -131,7 +132,8 @@
 
                 മറിച്ചു നമ്മൾക്ക് ആ പാസ്സ്‌വേർഡ്‌ ബ്രേക്ക്‌ ചെയ്‌തു അവരുടെ പഴയ വിൻഡോസ്‌ അവർക്കു കൊടുത്താൽ അവർക്കു എന്തു
                 സന്ദോഷം ആയിരിക്കും..🤩, സന്ദോഷത്തിന് പുറമെ, ചെറിയ ഒരു 💸കിട്ടുന്ന വിൻഡോസ് ഇൻസ്റ്റല്ലേഷന്,പാസ്സ്‌വേർഡ്‌
-                ബ്രേക്ക്‌ ചെയ്യുന്ന രീതിയിൽ കൂടുതൽ 💸 വാങ്ങുകയും ചെയ്യാം. സന്ദോഷത്തൂടെ കസ്റ്റമർ തരുകയും ചെയ്യും....🤑<br><br>
+                ബ്രേക്ക്‌ ചെയ്യുന്ന രീതിയിൽ കൂടുതൽ 💸 വാങ്ങുകയും ചെയ്യാം. സന്ദോഷത്തൂടെ കസ്റ്റമർ തരുകയും
+                ചെയ്യും....🤑<br><br>
 
 
                 ഇനി ഇതു എങ്ങനെ ചെയ്യും..🤔..<br><br>
@@ -156,7 +158,7 @@
                 ഒരു തേർഡ് പാർട്ടി Rescue Disk iso ഫയൽ ആണ് ഇതു, Download Link ഞാൻ താഴെ മെൻഷൻ ചെയ്യുന്നു :-<br><br>
 
 
-               <a  href="https://mirror.0x.sg/hbcd/HBCD_PE_x64.iso">click here to download</a><br><br>
+                <a href="https://mirror.0x.sg/hbcd/HBCD_PE_x64.iso">click here to download</a><br><br>
 
 
 
@@ -190,7 +192,7 @@
                 കണ്ടിലെ ഇത്ര പണിയേ ഒള്ളു, ആൾറെഡി ഒരു bootable ആക്കി വച്ച ഒരു usb ഉണ്ടേൽ 5 മിനുട്ട് കൊണ്ട് കാര്യം കഴിഞ്ഞു
                 കസ്റ്റമറെ close ചെയ്യാം..😍👍<br><br>
                 Thanks<br>
-              -Basim Mohammed-
+                -Basim Mohammed-
                 <br><br>
                 <a href="https://t.me/basimvilayur" class="contrib">Contributer contact
                   <img src="assets/images/telegram.svg" style="height:2em;width:2em;">
@@ -202,7 +204,7 @@
               <td><b class="que-bg">Q:How to install Virtual Box Guest Additions on Debian?</b><br>
                 <b class="orange none-b">Method -1</b><br>
                 1)Goto to the top bar click on Device->Insert Guest Additions CD Image<br>
-                 2)open terminal and type these commands <br>
+                2)open terminal and type these commands <br>
                 3) mount /dev/cdrom /media/cdrom<br>
                 4) cd /media/cdrom<br>
 
@@ -214,7 +216,7 @@
                 <b class="orange none-b">Method -3</b><br>
                 1)sudo apt-get update apt-get install -y linux-headers- $(uname -r) <br>
                 2)got to virtualbox Device->Insert Geust Addition CD <br>
-                3)go to Files in Ubuntu , then 
+                3)go to Files in Ubuntu , then
                 copy VBoxLinuxAdditions.run<br>
                 4)paste in a folder created in Home of ubuntu<br>
                 5)chmod 755 VBoxLinuxAdditions.run<br>
@@ -227,7 +229,23 @@
                 3)reboot<br>
                 4)Goto to the top bar click on Device->Insert Guest Additions CD Image<br>
                 5)reboot
-               
+
+              </td>
+              
+            </tr>
+            <tr>
+              <td><b class="que-bg">Q:Shared Folder Problem in VirtualBox? (Permission Problem)</b><br>
+                <b class="orange none-b">Solution 1</b><br>
+                Run <b>sudo adduser $USER vboxsf</b> from terminal.<br>
+                (On Suse it's sudo usermod --append --groups vboxsf $USER)<br><br>
+                To take effect you should log out and then log in, or you may need to reboot.<br><br>
+                <b class="orange none-b">Solution 2</b><br>
+                Edit the file /etc/group (you will need root privileges). Look for the line vboxsf:x:999 and add at the
+                end :yourusername -- use this solution if you don't have sudo.<br><br>
+
+                To take effect you should log out and then log in, or you may need to reboot.
+
+
               </td>
             </tr>
 
