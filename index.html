@@ -231,7 +231,7 @@
                 5)reboot
 
               </td>
-              
+
             </tr>
             <tr>
               <td><b class="que-bg">Q:Shared Folder Problem in VirtualBox? (Permission Problem)</b><br>
@@ -246,6 +246,72 @@
                 To take effect you should log out and then log in, or you may need to reboot.
 
 
+              </td>
+            </tr>
+
+            <tr>
+              <td><b class="que-bg">Q:XAMPP - How do I fix MySQL port 3306 already in use? </b><br>
+                <b class="orange none-b">Solution 1</b><br>
+                if any other mysql services already installed!
+                <ul>
+                  <li>search 'services' in search bar , open it . </li>
+                  <li>find the mysql service within the list </li>
+                  <li>right click and stop it. </li>
+                  <li>restart mysql from xampp </li>
+                </ul>
+                <b class="orange none-b">Solution 2</b><br>
+                change port number 3306 to 3307
+                <ul>
+                  <li>open xampp control panel. </li>
+                  <li>click on "config" option in mysql button. </li>
+                  <li>open my.ini </li>
+                  <li>change 3306 to 3307 </li>
+                  <li>save and exit. </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b class="que-bg">Q:XAMPP - Apache not start </b><br>
+                <b class="orange none-b">Solution 1</b><br>
+
+                <ul>
+                  <li>search 'IIS' in search bar , open it . </li>
+                  <li>stop it. </li>
+                  <li>restart apache from xampp </li>
+                </ul>
+                <br>
+                if IIS not found follow this<br>
+                <b style="color:#1fc1ff;font-weight: 400;">Enabling IIS and required IIS components on Windows
+                  10</b><br>
+                <ul>
+                  <li>Open Control Panel and click Programs -> Programs and Features > Turn Windows features on or off.
+                  </li>
+                  <li>Enable Internet Information Services. </li>
+                  <li>Then follow solution 1 </li>
+
+                </ul>
+                <b class="orange none-b">Solution 2</b><br>
+                change port number 80 to 81
+                <ul>
+                  <li>open xampp control panel. </li>
+                  <li>click on "config" option in apache button. </li>
+                  <li>open httpd.conf </li>
+                  <li>change 80 to 81 </li>
+                  <li>save and exit. </li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b class="que-bg">Q:Enabling IIS and required IIS components on Windows 10</b>
+                <br>  
+                <ul>
+                    <li>Open Control Panel and click Programs -> Programs and Features > Turn Windows features on or
+                      off.</li>
+                    <li>Enable Internet Information Services. </li>
+                    
+                  </ul>
               </td>
             </tr>
 
