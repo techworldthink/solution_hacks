@@ -350,6 +350,20 @@
             </tr>
 
             <tr>
+              <td><b class="que-bg">Q:php showing code in browser (php not working LAMP Ubuntu)</b>
+                <br>  
+                <ul>
+                    <li>sudo apt-get install php libapache2-mod-php </li>
+                    <li>sudo a2dismod mpm_event</li>
+                    <li>php -v        # find version and use this version in below command </li>
+                    <li>sudo a2enmod mpm_prefork && sudo a2enmod php7.0 </li>
+                    <li>sudo service apache2 restart </li>
+                  </ul>
+                  <b class="orange none-b"> Now try to open php file in browser</b><br>
+              </td>
+            </tr>
+
+            <tr>
               <td></td>
             </tr>
 
