@@ -305,79 +305,81 @@
 
             <tr>
               <td><b class="que-bg">Q:Enabling IIS and required IIS components on Windows 10</b>
-                <br>  
+                <br>
                 <ul>
-                    <li>Open Control Panel and click Programs -> Programs and Features > Turn Windows features on or
-                      off.</li>
-                    <li>Enable Internet Information Services. </li>
-                    
-                  </ul>
+                  <li>Open Control Panel and click Programs -> Programs and Features > Turn Windows features on or
+                    off.</li>
+                  <li>Enable Internet Information Services. </li>
+
+                </ul>
               </td>
             </tr>
 
             <tr>
               <td><b class="que-bg">Q:How to Install Google Chrome Using Terminal on Linux</b>
-                <br>  
+                <br>
                 <ul>
-                    <li>Open Terminal </li>
-                    <li>sudo apt update</li>
-                    <li>sudo apt upgrade </li>
-                    <li>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb </li>
-                    <li>sudo dpkg -i google-chrome-stable_current_amd64.deb </li>
-                  </ul>
+                  <li>Open Terminal </li>
+                  <li>sudo apt update</li>
+                  <li>sudo apt upgrade </li>
+                  <li>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb </li>
+                  <li>sudo dpkg -i google-chrome-stable_current_amd64.deb </li>
+                </ul>
               </td>
             </tr>
 
             <tr>
               <td><b class="que-bg">Q:git-diff to ignore ^M (Unwanted modification of files in linux)</b>
-                <br>  
+                <br>
                 <ul>
-                    <li>$ git config --global core.autocrlf true </li>
-                    
-                  </ul>
+                  <li>$ git config --global core.autocrlf true </li>
+
+                </ul>
               </td>
             </tr>
 
             <tr>
               <td><b class="que-bg">Q:How to remove mounted disk icons from Linux(MATE,Debian,Parrot) desktop?</b>
-                <br>  
+                <br>
                 <ul>
-                    <li>Applications -> System Tools -> dconf Editor </li>
-                    <li>org -> mate -> caja -> desktop </li>
-                    <li>Volume-Visible  OFF </li>
-                  </ul>
+                  <li>Applications -> System Tools -> dconf Editor </li>
+                  <li>org -> mate -> caja -> desktop </li>
+                  <li>Volume-Visible OFF </li>
+                </ul>
               </td>
             </tr>
 
             <tr>
               <td><b class="que-bg">Q:php showing code in browser (php not working LAMP Ubuntu)</b>
-                <br>  
+                <br>
                 <ul>
-                    <li>sudo apt-get install php libapache2-mod-php </li>
-                    <li>sudo a2dismod mpm_event</li>
-                    <li>php -v        # find version and use this version in below command </li>
-                    <li>sudo a2enmod mpm_prefork && sudo a2enmod php7.0 </li>
-                    <li>sudo service apache2 restart </li>
-                  </ul>
-                  <b class="orange none-b"> Now try to open php file in browser</b><br>
+                  <li>sudo apt-get install php libapache2-mod-php </li>
+                  <li>sudo a2dismod mpm_event</li>
+                  <li>php -v # find version and use this version in below command </li>
+                  <li>sudo a2enmod mpm_prefork && sudo a2enmod php7.0 </li>
+                  <li>sudo service apache2 restart </li>
+                </ul>
+                <b class="orange none-b"> Now try to open php file in browser</b><br>
               </td>
             </tr>
 
             <tr>
-              <td><b class="que-bg">Q:Task watchdog got triggered. The following tasks did not feed the watchdog in time (Arduino/ESP32)</b>
-                <br>  
-                <b class="orange none-b">Adding these three line to your continuous rtos function (or in your loop)</b><br>
+              <td><b class="que-bg">Q:Task watchdog got triggered. The following tasks did not feed the watchdog in time
+                  (Arduino/ESP32)</b>
+                <br>
+                <b class="orange none-b">Adding these three line to your continuous rtos function (or in your
+                  loop)</b><br>
                 <ul>
-                    <li>TIMERG0.wdt_wprotect=TIMG_WDT_WKEY_VALUE;</li>
-                    <li>TIMERG0.wdt_feed=1;</li>
-                    <li>TIMERG0.wdt_wprotect=0;</li>
-</ul>
-<b class="orange none-b">Add this header</b>
-<ul>
-                    <li>#include "soc/timer_group_struct.h"</li>
-                    <li>#include "soc/timer_group_reg.h"</li>
-                  </ul>
-                  
+                  <li>TIMERG0.wdt_wprotect=TIMG_WDT_WKEY_VALUE;</li>
+                  <li>TIMERG0.wdt_feed=1;</li>
+                  <li>TIMERG0.wdt_wprotect=0;</li>
+                </ul>
+                <b class="orange none-b">Add this header</b>
+                <ul>
+                  <li>#include "soc/timer_group_struct.h"</li>
+                  <li>#include "soc/timer_group_reg.h"</li>
+                </ul>
+
               </td>
             </tr>
 
@@ -387,21 +389,43 @@
 
             <tr>
               <td><b class="que-bg">Q:UNINSTALL OR COMPLETELY REMOVE MYSQL FROM UBUNTU (Linux)</b>
-                <br>  
+                <br>
                 <b class="orange none-b">Open terminal and give the commands</b><br>
                 <ul>
-                    <li>sudo apt-get remove --purge mysql*</li>
-                    <li>sudo apt-get purge mysql*</li>
-                    <li>sudo apt-get autoremove</li>
-                    <li>sudo apt-get autoclean</li>
-                    <li>sudo apt-get remove dbconfig-mysql</li>
-                    <li>sudo apt-get dist-upgrade         # if needed</li>
-                    <li>sudo apt-get install mysql-server</li>
-                  </ul>
-                  <b class="orange none-b">To view defualt credentials</b><br>
-                  <ul>
-                    <li>sudo cat /etc/mysql/debian.cnf</li>
-                  </ul>
+                  <li>sudo apt-get remove --purge mysql*</li>
+                  <li>sudo apt-get purge mysql*</li>
+                  <li>sudo apt-get autoremove</li>
+                  <li>sudo apt-get autoclean</li>
+                  <li>sudo apt-get remove dbconfig-mysql</li>
+                  <li>sudo apt-get dist-upgrade # if needed</li>
+                  <li>sudo apt-get install mysql-server</li>
+                </ul>
+                <b class="orange none-b">To view defualt credentials</b><br>
+                <ul>
+                  <li>sudo cat /etc/mysql/debian.cnf</li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b class="que-bg">സാധാരണ ubuntu ഇൻസ്റ്റാൾ ചെയ്യുമ്പോൾ user അഭിമുഖികരിക്കുന്ന പ്രശ്നം ആണ് mp3, mkv
+                  എന്നിങ്ങനെ ഉള്ള ഫയൽസ് play ആകില്ല ആയാൽ ശബ്ദം കേൾക്കില്ല.. അവയ്ക്കുള്ള പ്രതിവിധി ആണ് ഈ ഫയൽസ്...
+                  ഇൻസ്റ്റാൾ ചെയ്യുന്ന സമയത്തു fluendo ലൈബ്രറി ഇൻസ്റ്റാൾ ചെയ്യുന്നവർക്കും ചെയ്തവർക്കും ഈ ഫയൽസ് വേണ്ട...
+                  (Linux audio problem (mp3 mkv support))</b>
+                <br>
+                <b class="orange none-b">Open terminal and give the commands</b><br>
+                <ul>
+                  <li>
+                    apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev
+                    gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad
+                    gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x
+                    gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+                  </li>
+                </ul>
+
+                <a href="https://t.me/linuxrat67" class="contrib">Contributer contact
+                  <img src="assets/images/telegram.svg" style="height:2em;width:2em;">
+                </a>
               </td>
             </tr>
 
