@@ -444,6 +444,24 @@
               </td>
             </tr>
             <tr>
+              <td><b class="que-bg">Moving Git repository content to another repository preserving history</b>
+                <br>
+                <b class="orange none-b"></b><br>
+                <ul>
+                  <li>cd repo2 </li>
+                  <li>git checkout master</li>
+                  <li>git remote add r1remote **url-of-repo1** </li>
+                  <li>git fetch r1remote</li>
+                  <li>git merge r1remote/master --allow-unrelated-histories</li>
+                  <li>git remote rm r1remote</li>
+                </ul>
+
+                <a href="https://t.me/linuxrat67" class="contrib">Contributer contact
+                  <img src="assets/images/telegram.svg" style="height:2em;width:2em;">
+                </a>
+              </td>
+            </tr>
+            <tr>
               <td></td>
             </tr>
 
