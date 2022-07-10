@@ -271,6 +271,29 @@
               </td>
             </tr>
 
+
+            <tr>
+              <td><b class="que-bg">Q:XAMPP - MySQL shutdown unexpectedly </b><br>
+                <b class="orange none-b">Solution 1</b><br>
+                In XAMPP Shell execute the following command: 
+                <ul>
+                  <li>mysqld --console --skip-grant-tables --skip-external-locking</li>
+                </ul>
+                Leave this black command line window open and click on the Shell button in the Control Panel again to open a second command line window and execute this command 
+                <ul>
+                  <li>mysqlcheck -r --databases mysql --use-frm</li>
+                </ul>
+                <b class="orange none-b">Solution 2</b><br>
+                Search for the following files in your \xampp\mysql\ folder and delete them:
+                <ul>
+                  <li>ib_logfile0 </li>
+                  <li>ib_logfile1</li>
+                  <li>aria_log_control</li>
+                </ul>
+              </td>
+            </tr>
+            
+
             <tr>
               <td><b class="que-bg">Q:XAMPP - Apache not start </b><br>
                 <b class="orange none-b">Solution 1</b><br>
