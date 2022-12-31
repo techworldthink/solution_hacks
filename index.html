@@ -491,10 +491,20 @@
                 <b class="orange none-b"></b><br>
                 <ul>
                   <li>git config --system core.longpaths true </li>
-
                 </ul>
+              </td>
+            </tr>
 
-
+            <tr>
+              <td><b class="que-bg">Ubuntu update error fix</b>
+                <br>
+                <b class="orange none-b"></b><br>
+                <ul>
+                  <li>cp /etc/apt/sources.list /etc/apt/sources.list.bak </li>
+                  <li>sudo sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g'
+                    /etc/apt/sources.list </li>
+                  <li>sudo apt-get update && sudo apt-get dist-upgrade</li>
+                </ul>
               </td>
             </tr>
 
